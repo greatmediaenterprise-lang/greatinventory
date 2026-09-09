@@ -1,0 +1,120 @@
+{
+  "users": [
+    {
+      "id": "okoh-great-greatpay-tech",
+      "name": "Okoh Great",
+      "email": "okoh.great@greatpay.tech",
+      "role": "Chief Executive Officer",
+      "department": "Executive Office",
+      "image": "/ceo.jpg",
+      "linkedin": "https://www.linkedin.com",
+      "passwordHash": "$2a$10$yLbdWEEYGGxqEZqmEdcMD.nA5iDgFSIn7GkbR6p/BZ.PpMyZDNbCO"
+    },
+    {
+      "id": "temidayo-alao-greatpay-tech",
+      "name": "Alao Temidayo",
+      "email": "temidayo.alao@greatpay.tech",
+      "role": "Account Officer",
+      "department": "Client Relations",
+      "image": "/account-officer-dayo.jpg",
+      "linkedin": "https://www.linkedin.com",
+      "passwordHash": "$2a$10$dcrvdhWqBeyp8cvi9Ox04Oq.SOydYbJGM0pgPM.OMQYQBQae1c1wK"
+    },
+    {
+      "id": "tope-bankole-greatpay-tech",
+      "name": "Tope Bankole",
+      "email": "tope.bankole@greatpay.tech",
+      "role": "Head of Operations",
+      "department": "Operations",
+      "image": "/tope-bankole.jpg",
+      "linkedin": "https://www.linkedin.com",
+      "passwordHash": "$2a$10$N5p/DG9tSZSym.R.C9bbqOE7emUjFQHXgorOZmQp.1HIfCw5Cbire"
+    },
+    {
+      "id": "bakare-greatpay-tech",
+      "name": "Prof. Emmanuel Afolabi Bakare",
+      "email": "bakare@greatpay.tech",
+      "role": "Council Member",
+      "department": "Board & Governance",
+      "image": "/council.jpg",
+      "linkedin": "https://www.linkedin.com/in/prof-emmanuel-afolabi-bakare",
+      "passwordHash": "$2a$10$kjMakiswTc3hNObAM8pIZe0dtUHjLftRybmms4kdZdn1BgZwj8itq"
+    }
+  ],
+  "cards": [
+    {
+      "id": "GP-1001",
+      "holder": "Okoh Great",
+      "type": "Virtual Platinum",
+      "status": "ACTIVE",
+      "balance": 2500000,
+      "last4": "1001",
+      "createdAt": "2025-12-01"
+    },
+    {
+      "id": "GP-1002",
+      "holder": "Alao Temidayo",
+      "type": "Corporate Debit",
+      "status": "ACTIVE",
+      "balance": 1532000,
+      "last4": "1002",
+      "createdAt": "2025-11-15"
+    },
+    {
+      "id": "GP-1003",
+      "holder": "Tope Bankole",
+      "type": "Travel Rewards",
+      "status": "PENDING",
+      "balance": 722400,
+      "last4": "1003",
+      "createdAt": "2026-01-08"
+    },
+    {
+      "id": "GP-1004",
+      "holder": "Prof. Emmanuel Afolabi Bakare",
+      "type": "Premium Plus",
+      "status": "ACTIVE",
+      "balance": 3400000,
+      "last4": "1004",
+      "createdAt": "2025-10-09"
+    }
+  ],
+  "transactions": [
+    {
+      "id": "txn-001",
+      "cardId": "GP-1001",
+      "type": "Card Transfer",
+      "amount": 250000,
+      "status": "APPROVED",
+      "merchant": "Skyline Markets",
+      "createdAt": "2026-09-02T09:15:00.000Z"
+    },
+    {
+      "id": "txn-002",
+      "cardId": "GP-1002",
+      "type": "ATM Withdrawal",
+      "amount": 45000,
+      "status": "PENDING",
+      "merchant": "Main Branch ATM",
+      "createdAt": "2026-09-03T10:00:00.000Z"
+    },
+    {
+      "id": "txn-003",
+      "cardId": "GP-1004",
+      "type": "Purchase",
+      "amount": 89000,
+      "status": "APPROVED",
+      "merchant": "Aero Retail",
+      "createdAt": "2026-09-04T13:25:00.000Z"
+    },
+    {
+      "id": "txn-004",
+      "cardId": "GP-1003",
+      "type": "Refund",
+      "amount": 32000,
+      "status": "FAILED",
+      "merchant": "TravelHub",
+      "createdAt": "2026-09-05T15:30:00.000Z"
+    }
+  ]
+}
