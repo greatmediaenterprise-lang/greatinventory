@@ -3,17 +3,10 @@
 import { useEffect, useState } from 'react';
 import { useRouter } from 'next/navigation';
 
-const demoAccounts = [
-  { name: 'Okoh Great', email: 'okoh.great@greatpay.tech', role: 'Chief Executive Officer' },
-  { name: 'Alao Temidayo', email: 'temidayo.alao@greatpay.tech', role: 'Account Officer' },
-  { name: 'Tope Bankole', email: 'tope.bankole@greatpay.tech', role: 'Head of Operations' },
-  { name: 'Prof. Emmanuel Afolabi Bakare', email: 'bakare@greatpay.tech', role: 'Council Member' }
-];
-
 export default function HomePage() {
   const router = useRouter();
-  const [email, setEmail] = useState('okoh.great@greatpay.tech');
-  const [password, setPassword] = useState('admin');
+  const [email, setEmail] = useState('');
+  const [password, setPassword] = useState('');
   const [loginError, setLoginError] = useState('');
   const [loading, setLoading] = useState(true);
 
@@ -103,7 +96,7 @@ export default function HomePage() {
               </span>
             </div>
 
-            <p className="mb-6 text-slate-300">Use your email and password to sign in.</p>
+            <p className="mb-6 text-slate-300">Use your company email and password to sign in.</p>
 
             <div className="space-y-5">
               <label className="block space-y-2">
@@ -135,20 +128,8 @@ export default function HomePage() {
                 Sign in
               </button>
 
-              <div className="rounded-xl border border-slate-700 bg-slate-950/60 p-3">
-                <p className="mb-2 text-xs font-semibold uppercase tracking-[0.15em] text-cyan-300">Demo users</p>
-                <div className="space-y-2 text-sm text-slate-300">
-                  {demoAccounts.map((user) => (
-                    <div key={user.email} className="flex items-center justify-between gap-3 border-b border-slate-800 pb-2 last:border-b-0 last:pb-0">
-                      <div>
-                        <div className="font-medium text-white">{user.name}</div>
-                        <div className="text-xs text-slate-400">{user.email}</div>
-                      </div>
-                      <span className="text-xs text-cyan-300">{user.role}</span>
-                    </div>
-                  ))}
-                </div>
-                <p className="mt-3 text-xs text-slate-400">Password for every demo account: <span className="font-semibold text-white">admin</span></p>
+              <div className="rounded-xl border border-slate-700 bg-slate-950/60 p-3 text-sm text-slate-300">
+                Contact your administrator if you need account access.
               </div>
 
               <div className="min-h-5 text-sm text-rose-300">{loginError}</div>
